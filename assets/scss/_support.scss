@@ -1,0 +1,15 @@
+.support {
+    background-color: $white;
+    text-align: center;
+    &__heading {
+        margin-bottom: 80px;
+
+        h2 {
+            margin: 0 auto 24px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+    }
+}

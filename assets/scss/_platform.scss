@@ -1,0 +1,37 @@
+.platform {
+    position: relative;
+    background-color: $pastelGray;
+    text-align: center;
+
+    &__heading {
+        margin-bottom: 80px;
+
+        h2 {
+            margin: 0 auto 24px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__flex {
+        margin-bottom: 80px;
+        .row {
+            justify-content: center;
+        }
+
+        .col-sm {
+            max-width: 315px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__button {
+        button {
+           margin: 0 5px;
+        }
+    }
+}

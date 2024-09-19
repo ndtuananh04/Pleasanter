@@ -1,0 +1,30 @@
+/**
+ * Global reset
+ */
+@import 'mixins';
+@import 'variables';
+@import 'bootstrap/bootstrap';
+//animated
+@import 'animate';
+
+// slick
+@import 'slick/slick';
+
+//template css
+@import 'general';
+@import 'contents/header';
+@import 'contents/footer';
+@import 'contents/home';
+@import 'contents/slick';
+
+//content
+@import "header";
+@import "hero";
+@import "platform";
+@import "feature";
+@import "news";
+@import "story";
+@import "feedback";
+@import "support";
+@import "download";
+@import "footer";

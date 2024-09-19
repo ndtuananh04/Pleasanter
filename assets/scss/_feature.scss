@@ -1,0 +1,43 @@
+.feature {
+    background-color: $white;
+    text-align: center;
+
+    &__heading {
+        margin-bottom: 80px;
+
+        h2 {
+            margin: 0 auto 24px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+    }
+    
+    &__flex {
+        position: relative;
+        margin-bottom: 80px;
+
+        .row {
+            justify-content: center;
+        }
+
+        .col-sm {
+            max-width: 315px;
+        }
+        img {
+            margin-bottom: 30px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 525px;
+            height: 100%;
+            background-image: url('../images/no_image.jpg');
+            background-repeat: no-repeat;
+            top: -50px;
+            left: 400px;
+        }
+    }
+}
