@@ -29,15 +29,15 @@
             margin-bottom: 30px;
         }
 
-        &::before {
-            content: '';
-            position: absolute;
-            width: 525px;
-            height: 100%;
-            background-image: url('../images/no_image.jpg');
-            background-repeat: no-repeat;
-            top: -50px;
-            left: 400px;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     width: 525px;
+        //     height: 100%;
+        //     background-image: url('../images/no_image.jpg');
+        //     background-repeat: no-repeat;
+        //     top: -50px;
+        //     left: 400px;
+        // }
     }
 }

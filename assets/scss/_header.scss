@@ -5,36 +5,59 @@
 
     border: solid 1px #000000;
 
-    &__logo {
+    &__logo1 {
         img {
-                width: 203px;
-                height: 40px;
+                height: 100%;
         }
     }
     &__nav {
         position: relative;
-        display: flex;
-        // justify-content: space-between;
-        align-items: center;
-        padding: 14px 20px;
-        max-width: 1200px;
+        padding: 14px 0;
     }
-    &__links {
-        font-size: 16px;
-        color: #000000;
-        text-decoration: none;
-        margin-left: 248px;
 
-        a {
-            margin-right: 24px;
+    &__right {
+        display: flex;
+
+        @media (max-width: 970px) {
+            display: none;
         }
     }
-    .btnYellow {
-        position: absolute;
-        right: 0;
+
+    &__links {
+        display: flex;
+        color: #000000;
+        text-decoration: none;
+        margin-top: 12px;
+
+        > ul {
+            list-style-type: none;
+            display: flex;
+            gap: 24px;
+            margin-right: 20px;
+            
+            > li {
+                align-items: center;
+            }
+        }
+
     }
+    // .btnYellow {
+    //     position: absolute;
+    //     right: 0;
+        
+    // }
     .btnWhite {
-        position: absolute;
-        right: 165px;
+        margin: 0 20px 0;
     }
+
+    &__icon {
+        display: none;
+
+        @media (max-width: 970px) {
+            display: inline-block;
+            right: 0;
+            margin-top: 8px;
+        }
+    }
+
 }

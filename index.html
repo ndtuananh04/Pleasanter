@@ -12,24 +12,39 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav container">
-            <a href="/" class="header__logo">
-                <img src="assets/images/pleasanter.svg" alt="Pleasanter logo">
-            </a>
-            <div class="header__links">
-                <a href="#">Applications</a>
-                <a href="#">Key Features</a>
-                <a href="#">What's new?</a>
-                <a href="#">Case Study</a>
-            </div>
+            <nav class="header__nav d-flex justify-content-around">
+                <a href="/" class="header__logo1">
+                    <img src="assets/images/pleasanter.svg" alt="Pleasanter logo">
+                </a>
+                <div class="header__icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="header__right">
+                    <div class="header__links">
+                    <ul>
+                        <li>
+                            <a href="#">Applications</a>
+                        </li>
+                        <li>
+                            <a href="#">Key Features</a>
+                        </li>
+                        <li>
+                            <a href="/views/news.html">What's new?</a>
+                        </li>
+                        <li>
+                            <a href="#">Case Study</a>
+                        </li>
+                    </ul>
+                    </div>
+                    <button id="login" class="btnWhite">Login</button>
+                    <button id="book" class="btnYellow">Book a demo</button>
+                </div>
 
-            <button id="login" class="btnWhite">Login</button>
-            <button id="book" class="btnYellow">Book a demo</button>
-        </nav>
+            </nav>
     </header>
 
     <section class="hero">
-        <div class="container__section">
+        <div class="container">
             <div class="hero__content">
                 <h1 class="hero__title">Operation Made Simple with Pleasanter: Powerful Low-Code Solutions</h1>
                 <p>Unlock the power of low-code development and build applications faster than ever before.</p>
@@ -40,41 +55,39 @@
     </section>
 
     <section class="platform">
-        <div class="container__section">
+        <div class="container">
             <div class="platform__heading">
                 <h2 class="platform__title">One platform. Endless possibilities.</h2>
                 <p>Discover our successful implementations</p>
             </div>
             <div class="platform__flex">
                 <div class="row">
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
                     </div>
-                    <div class="col-sm">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <img src="assets/images/icon_platform.svg" alt="icon platform">
                         <h3>Human resources</h3>
                         <p>Employee list, recruitment management, application management, HRM system integration</p>
@@ -89,39 +102,40 @@
     </section>
 
     <section class="feature">
-        <div class="container__section">
+        <div class="container">
             <div class="feature__heading">
                 <h2 class="feature__title">Key features</h2>
                 <p>Discover our successful implementations</p>
             </div>
             <div class="feature__flex">
                 <div class="row">
-                    <div class="col-sm">
-                        <img src="assets/images/icon_platform.svg" alt="icon platform">
-                        <h3>Human resources</h3>
-                        <p>Employee list, recruitment management, application management, HRM system integration</p>
+                    <div class="col-lg-3">
+                        <div class="feature__item">
+                            <img src="assets/images/icon_platform.svg" alt="icon platform">
+                            <h3>Human resources</h3>
+                            <p>Employee list, recruitment management, application management, HRM system integration</p>
+                        </div>
+                        <div class="feature__item">
+                            <img src="assets/images/icon_platform.svg" alt="icon platform">
+                            <h3>Human resources</h3>
+                            <p>Employee list, recruitment management, application management, HRM system integration</p>
+                        </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-lg-6">
+                        <img src="assets/images/no_image.jpg" alt="placeholder">
                     </div>
-                    <div class="col-sm">
-                        <img src="assets/images/icon_platform.svg" alt="icon platform">
-                        <h3>Human resources</h3>
-                        <p>Employee list, recruitment management, application management, HRM system integration</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm">
-                        <img src="assets/images/icon_platform.svg" alt="icon platform">
-                        <h3>Human resources</h3>
-                        <p>Employee list, recruitment management, application management, HRM system integration</p>
-                    </div>
-                    <div class="col-5">
-                    </div>
-                    <div class="col-sm">
-                        <img src="assets/images/icon_platform.svg" alt="icon platform">
-                        <h3>Human resources</h3>
-                        <p>Employee list, recruitment management, application management, HRM system integration</p>
-                    </div>
+                    <div class="col-lg-3">
+                      <div class="feature__item">
+                            <img src="assets/images/icon_platform.svg" alt="icon platform">
+                            <h3>Human resources</h3>
+                            <p>Employee list, recruitment management, application management, HRM system integration</p>
+                        </div>
+                        <div class="feature__item">
+                            <img src="assets/images/icon_platform.svg" alt="icon platform">
+                            <h3>Human resources</h3>
+                            <p>Employee list, recruitment management, application management, HRM system integration</p>
+                        </div>
+                    </div> 
                 </div>
             </div>
             <button class="btnYellow">Get started</button>
@@ -129,14 +143,15 @@
     </section>
 
     <section class="news">
-        <div class="container__section">
+        <div class="container">
             <div class="news__heading">
                 <h2 class="news__title">What’s new?</h2>
                 <p>Update the latest news about Pleasanter</p>
             </div>
-            <div>
+            <div class="row">
+                 <div class="col-12">
                 <ul class="news__list">
-                    <li class="news__item">
+                    <li class="news__item d-flex justify-content-between align-items-center border-bottom py-3">
                         <div class="news__content">
                             <p>29/07/2024</p>
                             <span class="badge">News</span>
@@ -146,7 +161,7 @@
                             <a href="#">View more</a> 
                         </div>
                     </li>
-                    <li class="news__item">
+                    <li class="news__item d-flex justify-content-between align-items-center border-bottom py-3">
                         <div class="news__content">
                             <p>29/07/2024</p>
                             <span class="badge">News</span>
@@ -156,7 +171,7 @@
                             <a href="#">View more</a>
                         </div>
                     </li>
-                    <li class="news__item">
+                    <li class="news__item d-flex justify-content-between align-items-center border-bottom py-3">
                         <div class="news__content">
                             <p>29/07/2024</p>
                             <span class="badge">News</span>
@@ -167,13 +182,14 @@
                         </div>
                     </li>
                 </ul>
+                </div>
             </div>
             <button class="news__button btnWhite">View all</button>
         </div>
     </section>
 
     <section class="story">
-        <div class="container__section">
+        <div class="container">
             <div class="story__heading">
                 <h2 class="story__title">Success stories</h2>
                 <p>Discover our successful implementations</p>
@@ -181,7 +197,7 @@
             </div>
             <div class="story__list row">
                 <div class="story__item">
-                    <img src="assets/images/story1.svg" alt="story 1" width="370px" height="300px">
+                    <img src="assets/images/story1.svg" alt="story 1" width=100%>
                     <div class="story__tags">
                         <a href="#" class="story__tag">Retail</a>
                         <a href="#" class="story__tag">Category</a>
@@ -191,7 +207,7 @@
                     Transforming Businesses with Pleasanter's Low-Code Platform</p>
                 </div>
                 <div class="story__item">
-                    <img src="assets/images/story1.svg" alt="story 1" width="370px" height="300px">
+                    <img src="assets/images/story1.svg" alt="story 1" width=100%>
                     <div class="story__tags">
                         <a href="#" class="story__tag">Retail</a>
                         <a href="#" class="story__tag">Category</a>
@@ -201,7 +217,7 @@
                         Transforming Businesses with Pleasanter's Low-Code Platform</p>
                 </div>
                 <div class="story__item">
-                    <img src="assets/images/story1.svg" alt="story 1" width="370px" height="300px">
+                    <img src="assets/images/story1.svg" alt="story 1" width=100%>
                     <div class="story__tags">
                         <a href="#" class="story__tag">Retail</a>
                         <a href="#" class="story__tag">Category</a>
@@ -211,7 +227,7 @@
                         Transforming Businesses with Pleasanter's Low-Code Platform</p>
                 </div>
                 <div class="story__item">
-                    <img src="assets/images/story1.svg" alt="story 1" width="370px" height="300px">
+                    <img src="assets/images/story1.svg" alt="story 1" width=100%>
                     <div class="story__tags">
                         <a href="#" class="story__tag">Retail</a>
                         <a href="#" class="story__tag">Category</a>
@@ -221,7 +237,7 @@
                         Transforming Businesses with Pleasanter's Low-Code Platform</p>
                 </div>
                 <div class="story__item">
-                    <img src="assets/images/story1.svg" alt="story 1" width="370px" height="300px">
+                    <img src="assets/images/story1.svg" alt="story 1" width=100%>
                     <div class="story__tags">
                         <a href="#" class="story__tag">Retail</a>
                         <a href="#" class="story__tag">Category</a>
@@ -235,7 +251,7 @@
     </section>
 
     <section class="feedback">
-        <div class="container__section">
+        <div class="container">
             <div class="feedback__heading">
                 <h2 class="feedback__title">Customer testimonials</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -244,7 +260,7 @@
     </section>
 
     <section class="support">
-        <div class="container__section">
+        <div class="container">
             <div class="support__heading">
                 <h2 class="support__title">You need support?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -253,7 +269,7 @@
     </section>
 
     <section class="download">
-        <div class="container__section">
+        <div class="container">
             <div class="download__heading">
                 <h2 class="download__title">But first, download Pleasanter for free</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -262,9 +278,11 @@
     </section>
 
     <footer class="footer">
-        <div class="container__section">
+        <div class="container">
             <div class="footer__info">
-                <img src="assets/images/footer.svg" alt="pleasanter">
+                <a href="/" class="header__logo">
+                    <img src="assets/images/footer.svg" alt="pleasanter" width="170px">
+                </a>
                 <div class="footer__links">
                     <a href="#">Applications</a>
                     <a href="#">Key Features</a>
