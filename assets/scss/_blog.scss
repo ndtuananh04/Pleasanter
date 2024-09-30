@@ -59,6 +59,7 @@
     &__list {
         padding-left: 300px;
         right: 0;
+        position: relative;
 
         @media (max-width: 768px) {
             padding-left: 0;
@@ -89,21 +90,19 @@
         font-size: 12px;
     }
 
-        &__pagination {
-            display: flex;
-            justify-content: center;
-            margin-top: 40px;
-    
-            &--link {
-                margin: 0 5px;
-                padding: 10px 15px;
-                border: 1px solid #ccc;
-                text-decoration: none;
-                color: #333;
-    
-                &:hover {
-                    background-color: #f0f0f0;
-                }
+    &__pagination {
+        margin-top: 40px;
+
+        &--link {
+            margin: 0 5px;
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #333;
+
+            &:hover {
+                background-color: #f0f0f0;
             }
         }
+    }
 }
