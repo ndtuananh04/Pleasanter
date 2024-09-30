@@ -16,12 +16,32 @@
   </head>
   <body>
     <header class="header">
+      <div class="overlay hasfade"></div>
       <nav class="header__nav d-flex justify-content-around">
         <a href="/" class="header__logo1">
           <img src="../assets/images/pleasanter.svg" alt="Pleasanter logo" />
         </a>
         <div class="header__icon">
           <i class="fas fa-bars"></i>
+          <i class="fas fa-x d-none"></i>
+        </div>
+        <div class="header__menu hasfade">
+          <ul>
+            <li>
+              <a href="#">Applications</a>
+            </li>
+            <li>
+              <a href="#">Key Features</a>
+            </li>
+            <li>
+              <a href="#">Case Study</a>
+            </li>
+            <li>
+              <a href="/">What's new?</a>
+            </li>
+          </ul>
+          <button class="btnWhite login">Login</button>
+          <button class="btnYellow book">Book a demo</button>
         </div>
         <div class="header__right">
           <div class="header__links">
@@ -33,15 +53,15 @@
                 <a href="#">Key Features</a>
               </li>
               <li>
-                <a href="views/news.html">What's new?</a>
+                <a href="/views/news.html">What's new?</a>
               </li>
               <li>
                 <a href="#">Case Study</a>
               </li>
             </ul>
           </div>
-          <button id="login" class="btnWhite">Login</button>
-          <button id="book" class="btnYellow">Book a demo</button>
+          <button class="btnWhite login">Login</button>
+          <button class="btnYellow book">Book a demo</button>
         </div>
       </nav>
     </header>
