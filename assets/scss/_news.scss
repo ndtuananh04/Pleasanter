@@ -17,6 +17,7 @@
 
     &__list {
         list-style-type: none;
+        margin-top: 40px;
     }
 
     &__item {
@@ -34,10 +35,6 @@
             top: -29px;
         }
 
-        .badge {
-            text-align: left !important;
-        }
-
         > a {
             @media (max-width: 768px) {
                     text-align: left;
@@ -52,9 +49,19 @@
         
     }
 
+    &__category {
+        color: #007bff;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        padding: 4px 11px;
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 30px;
+    }
+    
     &__content {
         display: flex;
-
+        gap: 20px;
         @media (max-width: 768px) {
             flex-direction: column;
             text-align: left;

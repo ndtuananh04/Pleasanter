@@ -1,6 +1,7 @@
 html {
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
@@ -83,7 +84,7 @@ a {
     }
 }
 
-.container {
+.padding-tb {
     padding-top: 120px;
     padding-bottom: 115px;
 }
@@ -104,6 +105,14 @@ a {
     font-weight: bold;
     border: solid 1px black;
     cursor: pointer;
+}
+
+.tag {
+    background-color: $pastelGray;
+    padding: 4px 8px;
+    margin-right: 10px;
+    font-size: 12px;
+    display: inline-block;
 }
 
 .pointer-events {

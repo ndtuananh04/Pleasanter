@@ -1,7 +1,16 @@
 (function ($, window) {
-    $('.story__list').slick({
+
+    let marginLeft = $('.story .container').css('margin-left');
+    $(window).resize(function() {
+      let marginLeft = $('.story .container').css('margin-left');
+      console.log(marginLeft);
+    });
+
+    $('.story__list').css('margin-left', marginLeft);
+
+    $('.story__slider').slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 3.12,
         slidesToScroll: 1,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev custom-arrow">●</button>',
@@ -15,7 +24,7 @@
         }
       },
       {
-        breakpoint: 768,    // At 768px screen width
+        breakpoint: 528,    // At 768px screen width
         settings: {
           slidesToShow: 1,  // Show 1 slide
           slidesToScroll: 1 // Scroll 1 at a time
@@ -23,6 +32,8 @@
       }
     ]
       });
+
+
     
     $('.header__icon').click(function(){
         console.log('click');
