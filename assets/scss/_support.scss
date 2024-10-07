@@ -12,4 +12,34 @@
             margin-bottom: 24px;
         }
     }
+
+    &__flex {
+        text-align: center;
+
+        > div {
+            > h3 {
+                    margin: 30px 0;
+                }
+            > p {
+                margin: 0;
+            }
+            > a {
+                text-decoration: underline;
+            }
+            > button {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    &__free {
+        @media (max-width: 990px) {
+            margin-bottom: 30px;
+        }
+    }
+    &__paid {
+        > img {
+            padding: 9px 0;
+        }
+    }
 }

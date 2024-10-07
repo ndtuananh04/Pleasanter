@@ -10,7 +10,7 @@
 
     $('.story__slider').slick({
         infinite: true,
-        slidesToShow: 3.12,
+        slidesToShow: 3.12 ,
         slidesToScroll: 1,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev custom-arrow">●</button>',
@@ -33,7 +33,24 @@
     ]
       });
 
-
+    $('.feedback__slide').slick({
+        infinite: true,
+        slidesToShow: 2 ,
+        slidesToScroll: 1,
+        dots: true,
+        prevArrow: '<button type="button" class="slick-prev custom-arrow">●</button>',
+        nextArrow: '<button type="button" class="slick-next custom-arrow">●</button>',
+            responsive: [
+      {
+        breakpoint: 960,   
+        settings: {
+          slidesToShow: 1,  
+          slidesToScroll: 1 
+        }
+      }
+    ]
+      });
+    
     
     $('.header__icon').click(function(){
         console.log('click');

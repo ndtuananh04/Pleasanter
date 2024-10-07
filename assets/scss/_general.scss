@@ -115,6 +115,16 @@ a {
     display: inline-block;
 }
 
+.type {
+    color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 4px 11px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 30px;
+}
+
 .pointer-events {
     pointer-events: none !important;
 }
