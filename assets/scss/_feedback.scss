@@ -31,6 +31,10 @@
             border: none;
             font-weight: bold;
             margin: auto 15px auto 23px;
+            @media (max-width: 500px) {
+                margin: 10px auto 5px;
+                
+            }
         }
 
         &--support {
@@ -40,12 +44,24 @@
             color: $white;
             background-color: $black;
             margin: auto 0;
+
+            @media (max-width: 500px) {
+                    margin: 0px auto 10px;
+            
+                }
         }
 
         @media (max-width: 1000px) {
             position: relative;
             top: 0;
+            width: 100%;
             margin-bottom: 30px;
+            justify-content: center;
+        }
+
+        @media (max-width: 500px) {
+            height: 110px;
+            flex-direction: column;
         }
     }
 
