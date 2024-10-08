@@ -94,14 +94,15 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    background-color: $gray;
     }
 
     .slick-prev {
-        right: 0px;
-        margin-right: 100px;
+        // right: 0px;
+        right: 157px;
     }
     .slick-next {
-        margin-right: 100px;
+        right: 100px;
     }
 
     .slick-dots {

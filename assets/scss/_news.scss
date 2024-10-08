@@ -18,6 +18,7 @@
     &__list {
         list-style-type: none;
         margin-top: 40px;
+        padding-left: 0;
     }
 
     &__item {
@@ -55,6 +56,22 @@
         @media (max-width: 768px) {
             flex-direction: column;
             text-align: left;
+        }
+    }
+
+    &__tag {
+        &--desktop {
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        &--mobile {
+            display: none;
+            @media (max-width: 768px) {
+                display: inline;
+                margin-left: 5px;
+            }
         }
     }
 }

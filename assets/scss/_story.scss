@@ -23,10 +23,7 @@
     }
 
     &__list {
-        // position: absolute;
-        // top: 265px;
-        // display: flex;
-        // gap: 20px;
+        // margin: 0 20px !important;
     }
 
     &__holder {
@@ -62,11 +59,11 @@
     }
 
     .slick-prev {
-        right: 0px;
-        margin-right: 100px;
+        right: 157px;
+
     }
     .slick-next {
-        margin-right: 100px;
+        right: 100px;
     }
 
     .slick-dots {
@@ -75,7 +72,6 @@
 
     .slick-slide {
         padding: 0 10px;
-        margin-right: 5px;
     }
     // .slick-dots{
     //     li {
