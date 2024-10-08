@@ -16,8 +16,8 @@
     });
 
     $('.story__slider').slick({
-        infinite: true,
-        slidesToShow: 3.12 ,
+        infinite: false,
+        slidesToShow: 3.4 ,
         slidesToScroll: 1,
         dots: true,
         prevArrow: '<button type="button" class="slick-prev custom-arrow">●</button>',
@@ -27,11 +27,12 @@
         breakpoint: 1024,   // At 1024px screen width
         settings: {
           slidesToShow: 2,  // Show 2 slides
-          slidesToScroll: 1 // Scroll 1 at a time
+          slidesToScroll: 1 
+          // Scroll 1 at a time
         }
       },
       {
-        breakpoint: 528,    // At 768px screen width
+        breakpoint: 768,    // At 768px screen width
         settings: {
           slidesToShow: 1,  // Show 1 slide
           slidesToScroll: 1 // Scroll 1 at a time

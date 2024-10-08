@@ -7,14 +7,15 @@
 
     &-slide {
         user-select: text;
-
         @include media-breakpoint-up(lg) {
             padding: 0px 15px;
         }
+        margin-right: 20px;
     }
 
     &-track {
-        margin-left: unset;
+        
+        padding-left: 20px;
     }
 
     // style dots
@@ -75,6 +76,9 @@
             height: 24px;
         }
 
+        @media (max-width: 768px) {
+            display: none !important;
+        }
         // @include media-breakpoint-up(lg) {
         //     &:hover {
         //         transition: all 0.5s;
