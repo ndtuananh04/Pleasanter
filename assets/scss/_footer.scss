@@ -17,12 +17,12 @@
                 background-color: $black;
                 top: 125px;
 
-                @media (max-width: 768px) {
+                @media (max-width: 980px) {
                     top: 370px;
                 }
             }
 
-        @media (max-width: 768px) {
+        @media (max-width: 980px) {
             flex-direction: column;
             text-align: center;
             justify-content: center;
@@ -35,15 +35,16 @@
         display: flex;
         gap: 24px;
 
-        @media (max-width: 768px) {
+        @media (max-width: 980px) {
             flex-direction: column;
+            margin-top: 20px;
             margin-bottom: 30px;
         }
     }
 
     &__logo {
 
-        @media (max-width: 768px) {
+        @media (max-width: 980px) {
             display: inline-block;
             margin: 0 auto;
         }

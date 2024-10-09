@@ -8,7 +8,7 @@
     &-slide {
         user-select: text;
         @include media-breakpoint-up(lg) {
-            padding: 0px 15px;
+            padding-right: 15px;
         }
         margin-right: 20px;
     }
