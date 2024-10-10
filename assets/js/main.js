@@ -1,19 +1,19 @@
 (function ($, window) {
 
-    function updateMarginLeft() {
-      let marginLeft = $('.story .container').css('margin-left');
-      console.log(marginLeft);
-      let plusmargin = parseInt(marginLeft, 10) + 57;
-      $('.story__list').css('margin-left', marginLeft);
-      $('.slick-next').css('right', marginLeft);
-      $('.slick-prev').css('right', plusmargin + 'px');
-    }
+    // function updateMarginLeft() {
+    //   let marginLeft = $('.story .container').css('margin-left');
+    //   console.log(marginLeft);
+    //   let plusmargin = parseInt(marginLeft, 10) + 57;
+    //   $('.story__list').css('margin-left', marginLeft);
+    //   $('.slick-next').css('right', marginLeft);
+    //   $('.slick-prev').css('right', plusmargin + 'px');
+    // }
 
-    updateMarginLeft();
+    // updateMarginLeft();
 
-    $(window).resize(function() {
-      updateMarginLeft();
-    });
+    // $(window).resize(function() {
+    //   updateMarginLeft();
+    // });
 
     $('.story__slider').slick({
     //     infinite: false,
