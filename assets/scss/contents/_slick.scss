@@ -1,8 +1,8 @@
 .slick {
     &-slider {
-        @include media-breakpoint-up(lg) {
-            margin: 0px -15px;
-        }
+        // @include media-breakpoint-up(lg) {
+        //     margin: 0px -15px;
+        // }
     }
 
     &-slide {
@@ -15,7 +15,6 @@
 
     &-track {
         
-        padding-left: 20px;
     }
 
     // style dots
@@ -47,6 +46,10 @@
                 }
             }
         }
+        @media (max-width: 480px) {
+            display: flex;
+            justify-content: center;
+        }
     }
 
     // style arrows
@@ -76,9 +79,9 @@
             height: 24px;
         }
 
-        @media (max-width: 768px) {
-            display: none !important;
-        }
+        // @media (max-width: 768px) {
+        //     display: none !important;
+        // }
         // @include media-breakpoint-up(lg) {
         //     &:hover {
         //         transition: all 0.5s;

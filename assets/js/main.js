@@ -49,25 +49,50 @@
 					breakpoint: 992,
 					settings: {
 						slidesToShow: 2.3,
-						dots: false,
+						dots: true,
 					},
 				},
 				{
 					breakpoint: 768,
 					settings: {
-						slidesToShow: 2.1,
+						slidesToShow: 2.02,
 						dots: false,
 					},
 				},
 				{
 					breakpoint: 480,
 					settings: {
-						slidesToShow: 1.06,
+						slidesToShow: 1,
 						dots: false,
 					},
 				},
 			],
       });
+    
+    function getAndDisplayMargin() {
+			let marginContainer = parseInt($(".story .container").css("margin-left"));
+			let paddingContainer = parseInt($(".story .container").css("padding-left"));
+			let widthArrow = parseInt($(".story__slider .slick-prev").css("width"));
+			let marginNext = marginContainer + paddingContainer;
+      let leftPrev = marginContainer + widthArrow + paddingContainer + 16; // 16 is space between the 2 buttons
+
+			$('.story__slider').css({
+				"padding-left": marginNext + "px",
+			});
+			$(".slick-prev").css({
+				"right": leftPrev + "px",
+			});
+      
+			$(".slick-next").css({
+				"right": marginNext + "px",
+			});
+		}
+
+		getAndDisplayMargin();
+		// Call the function when changing the screen size
+		$(window).on("resize", function () {
+			getAndDisplayMargin();
+		});
 
     $('.feedback__slide').slick({
         infinite: true,
