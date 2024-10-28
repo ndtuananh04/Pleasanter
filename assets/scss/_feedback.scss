@@ -3,28 +3,24 @@
     position: relative;
 
     &__heading {
-
         @media (max-width: 1000px) {
             margin-bottom: 0;
         }
     }
 
     &__function {
-        position: absolute;
-        width: 536px;
-        height: 100px;
-        right: 0;
+        flex-direction: column;
         background-color: $red;
-        top: 110px;
-    
+        margin-bottom: 30px;
+
         &--download {
             padding: 8px 24px;
             border: none;
             font-weight: bold;
-            margin: auto 15px auto 23px;
-            @media (max-width: 500px) {
-                margin: 10px auto 5px;
-                
+            margin: 10px auto 5px;
+            
+            @include media-breakpoint-up(sm) {
+                margin: auto 15px auto 23px;
             }
         }
 
@@ -34,25 +30,25 @@
             font-weight: bold;
             color: $white;
             background-color: $black;
-            margin: auto 0;
+            margin: 0px auto 10px;
 
-            @media (max-width: 500px) {
-                    margin: 0px auto 10px;
-            
-                }
+            @include media-breakpoint-up(sm) {
+                margin: auto 0;
+            }
         }
 
-        @media (max-width: 1000px) {
-            position: relative;
+        @include media-breakpoint-up(sm) {
             top: 0;
-            width: 100%;
-            margin-bottom: 30px;
+            height: 100px;
+            flex-direction: row;
             justify-content: center;
         }
 
-        @media (max-width: 500px) {
-            height: 110px;
-            flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            width: 536px;
+            right: 0;
+            top: 110px;
         }
     }
 
@@ -61,11 +57,11 @@
     }
 
     &__info {
-        display: grid;
-        grid-template-columns: 1fr 3fr 4fr;
+        display: block;
 
-        @media (max-width: 500px) {
-            display: block;
+        @include media-breakpoint-up(sm) {
+            display: grid;
+            grid-template-columns: 1fr 3fr 4fr;
         }
     }
 
@@ -82,13 +78,13 @@
     }
 
     &__logo {
-        grid-column: 3;
-        padding-left: 30px;
-        border-left: solid 1px $black;
+        padding-left: 0;
+        border-left: none;
 
-        @media (max-width: 500px) {
-            padding-left: 0;
-            border-left: none;
+        @include media-breakpoint-up(sm) {
+            grid-column: 3;
+            padding-left: 30px;
+            border-left: solid 1px $black;
         }
     }
 
