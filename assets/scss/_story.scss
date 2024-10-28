@@ -39,10 +39,6 @@
             margin-bottom: 32px;
             transition: 0.5s all;
         
-            // @include media-breakpoint-up(sm) {
-            //     padding: 0 30px 0 0;
-            // }
-        
             @include media-breakpoint-up(lg) {
                 margin-bottom: 48px;
             }
@@ -58,40 +54,13 @@
         margin: 25px 0;
     }
 
-    .custom-arrow {
-        padding: 20px;
-        border: solid 1px $black;
-        border-radius: 50%;
-        top: 106%;
+    &__buttons {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    
+        justify-content: end;
     }
-
-    // .slick-prev {
-    //     right: 157px;
-
-    // }
-    // .slick-next {
-    //     right: 100px;
-    // }
 
     .slick-dots {
         top: 106%;
     }
 
-    // .slick-dots{
-    //     li {
-    //         background-color: red;
-    //         color: $gray;
-    //         /* Default dot color (light grey) */
-    //         border-radius: 50%;
-    //         width: 10px;
-    //         height: 10px;
-    //         padding: 0;
-    //         left: 0;
-    //     }
-    // }
 }

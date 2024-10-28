@@ -3,15 +3,6 @@
     position: relative;
 
     &__heading {
-        margin-bottom: 80px;
-
-        h2 {
-            margin: 0 auto 24px;
-        }
-
-        p {
-            margin-bottom: 24px;
-        }
 
         @media (max-width: 1000px) {
             margin-bottom: 0;
@@ -101,28 +92,9 @@
         }
     }
 
-    .custom-arrow {
-    padding: 20px;
-    border: solid 1px $black;
-    border-radius: 50%;
-    top: 120%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background-color: $gray;
-    
-        @media (max-width: 480px) {
-            display: none;
-        }
-    }
-
-    .slick-prev {
-        // right: 0px;
-        right: 157px;
-    }
-    .slick-next {
-        right: 100px;
+    &__buttons {
+        display: flex;
+        justify-content: end;
     }
 
     .slick-dots {
