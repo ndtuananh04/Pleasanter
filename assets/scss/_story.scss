@@ -1,39 +1,26 @@
 .story {
     background-color: $white;
-    position: relative;
     padding: 120px 0 125px;
     overflow: hidden;
+    
     &__heading {
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         position: relative;
-        h2 {
-            margin: 0 auto 24px;
+        text-align: center;
+
+        @include media-breakpoint-up(md) {
+            text-align: left;
         }
 
         .btnWhite {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-
-            @media (max-width: 768px) {
-                position: relative;
-                margin-top: 20px;
+            width: 110px;
+            
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                right: 0;
+                bottom: 24px;
             }
         }
-
-        @media (max-width: 768px) {
-            text-align: center;
-        }
-    }
-
-    &__list {
-        // margin: 0 20px !important;
-        
-            @include media-breakpoint-up(sm) {
-                padding-right: 0px;
-            }
-    
-
     }
 
     &__slider {
@@ -46,10 +33,6 @@
                 margin-left: unset;
             }
         }
-
-    &__holder {
-        height: 550px;
-    }
 
     &__item {
         padding: 0;
