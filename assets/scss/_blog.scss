@@ -25,7 +25,6 @@
         margin-bottom: 30px;
 
         @include media-breakpoint-up(md) {
-            max-width: 252px;
             position: absolute;
             width: 252px;
         }
